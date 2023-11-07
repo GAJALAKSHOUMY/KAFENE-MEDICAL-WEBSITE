@@ -1,0 +1,56 @@
+main{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    margin-top: 100px;
+}
+.data{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+.filter{
+    width: 180px
+}
+.fetchData {
+    display: flex;
+    flex-direction: column;
+}
+.dataCheck{
+    margin: 6px 0;
+    cursor: pointer;
+}
+.dataCheck input{
+    margin-right: 12px;
+}
+.fetchData p{
+    margin:24px 0px ;
+}
+.thead,tbody{
+    width: 100%;
+    border-collapse: collapse;
+}
+.thead,tbody tr{
+    vertical-align: middle;
+}
+.thead th{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+#printData td{
+    border-right: 0px solid black;
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.lightText{
+    color: #8c8c8c
+}
+.darkText{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}

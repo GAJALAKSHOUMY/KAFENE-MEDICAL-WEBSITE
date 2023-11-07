@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Users</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./users.css">
+    <link rel="stylesheet" href="./orders.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./users.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbarLeftMenu">
+            <div class="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="logoText">Kafene</p>
+            </div>
+            <nav>
+                <a class="navMenuLinks" href="./orders.html">Orders</a>
+                <a class="navMenuLinks" href="./products.html">Products</a>
+                <a class="navMenuLinks" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <a class="navMenuLinks" id="logout-button" href="">Logout</a>
+    </header>
+
+
+    <main>
+        <h1>Users</h1>
+        <section>
+            <form class="u-filter" id="search-form">
+                <input class="u-searchbox" type="search" id="searchBox" placeholder="Search by Name">
+                <input type="reset" class="u-reset-button" value="Reset" id="resetBtn">
+            </form>
+            <div style="width: 100%;">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr class="thead">
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th>DOB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                    </thead>
+                    <tbody class="printData" id="t2">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

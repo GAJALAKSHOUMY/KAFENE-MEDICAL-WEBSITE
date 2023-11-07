@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./orders.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./products.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbarLeftMenu">
+            <div class="logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="logoText">Kafene</p>
+            </div>
+            <nav>
+                <a class="navMenuLinks" href="./orders.html">Orders</a>
+                <a class="navMenuLinks" href="./products.html">Products</a>
+                <a class="navMenuLinks" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <a class="navMenuLinks" id="logout-button" href="">Logout</a>
+    </header>
+
+
+    <main>
+        <h1 class="big">Products</h1>
+        <section class="data">
+            <div class="filter">
+                <h3>Filters</h3>
+                <div class="fetchData">
+                    <p>Count: <span id=count></span></p>
+                    <label class="dataCheck"><input type="checkbox" name="orders-new" id="expiredCheckBox"
+                            checked="">Expired</label>
+                    <label class="dataCheck"><input type="checkbox" name="orders-packed" id="lowStockCheckBox"
+                            checked="">Low Stock</label>
+
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <table style="width: 100%;">
+                    <thead class="thead">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Product Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="printData">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
